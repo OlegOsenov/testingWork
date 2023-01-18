@@ -20,6 +20,9 @@ public class Sample03 {
         cats.remove(cat01);
         System.out.println("---------------");
         printList(cats);
+        System.out.println("---------------");
+        Cat cat02 = cats.peekFirst();
+        System.out.println(cat02.getName());
 
 
 
