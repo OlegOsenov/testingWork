@@ -10,6 +10,8 @@ public class CollectionsExample {
         list.add("Januare");
         list.add("February");
         list.add("March");
+        list.add(0,"February");
+        list.remove("February");
         System.out.println(list);
 
     }
