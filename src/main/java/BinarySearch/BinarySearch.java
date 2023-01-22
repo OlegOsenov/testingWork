@@ -57,6 +57,13 @@ public class BinarySearch {
         }
     }
 
-
+    // Вспомогательный метод для тестов
+    private static double[] generateRandomArray(int length) {
+        double[] array = new double[length];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = Math.random();
+        }
+        return array;
+    }
 
 }
