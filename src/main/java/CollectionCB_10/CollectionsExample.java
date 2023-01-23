@@ -13,6 +13,7 @@ public class CollectionsExample {
         list.add(0,"February");
         list.remove("February");
         System.out.println(list);
+        System.out.println(list.size());
 
     }
 }
