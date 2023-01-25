@@ -20,6 +20,11 @@ public class ArrayListDemo {
         System.out.println("Размер al после добавления элементов: " + al.size());
         //Отобразить списковый массив
         System.out.println("Содержимое al: " + al);
+        //Удалить элементы из списка массива
+        al.remove("F");
+        al.remove(2);
+        System.out.println("Размер al после удаления элементов: " + al.size());
+        System.out.println("Содержимое al: " + al);
 
     }
 
