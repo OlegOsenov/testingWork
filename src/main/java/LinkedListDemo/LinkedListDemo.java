@@ -20,6 +20,10 @@ public class LinkedListDemo {
         ll.remove("F");
         ll.remove(2);
         System.out.println("После удаления содержимое ll: " + ll);
+        //Удалить первый и последний элемент
+        ll.removeFirst();
+        ll.removeLast();
+        System.out.println("После удаления первого и последнего элемента, содержимое ll: " + ll);
 
 
     }
