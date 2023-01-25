@@ -17,6 +17,10 @@ public class ArrayListToArray {
         //Получить массив
         Integer[] ia = new Integer[al.size()];
         ia = al.toArray(ia);
+        int sum = 0;
+        //Просуммировать массив
+        for (int i: ia) sum +=i;
+        System.out.println("Сумма массива: " + sum);
 
     }
 
