@@ -13,7 +13,10 @@ public class ArrayListToArray {
         al.add(2);
         al.add(3);
         al.add(4);
-        System.out.println("Содрежимое массива al: " + al);
+        System.out.println("Содержимое массива al: " + al);
+        //Получить массив
+        Integer[] ia = new Integer[al.size()];
+        ia = al.toArray(ia);
 
     }
 
