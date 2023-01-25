@@ -16,6 +16,10 @@ public class LinkedListDemo {
         ll.addFirst("A");
         ll.add(1,"A2");
         System.out.println("Исходное содержимое ll: " + ll);
+        //Удаление элементов
+        ll.remove("F");
+        ll.remove(2);
+        System.out.println("После удаления содержимое ll: " + ll);
 
 
     }
