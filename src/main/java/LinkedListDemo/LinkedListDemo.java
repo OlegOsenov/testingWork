@@ -24,7 +24,10 @@ public class LinkedListDemo {
         ll.removeFirst();
         ll.removeLast();
         System.out.println("После удаления первого и последнего элемента, содержимое ll: " + ll);
-
+        //Получить и установить значение
+        String val = ll.get(2);
+        ll.set(2,val + " изменено");
+        System.out.println("Содержимое после изменения ll: " + ll);
 
     }
 
