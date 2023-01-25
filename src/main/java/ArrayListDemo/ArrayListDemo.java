@@ -17,6 +17,9 @@ public class ArrayListDemo {
         al.add("D");
         al.add("F");
         al.add(1,"A2");
+        System.out.println("Размер al после добавления элементов: " + al.size());
+        //Отобразить списковый массив
+        System.out.println("Содержимое al: " + al);
 
     }
 
