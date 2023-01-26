@@ -8,8 +8,12 @@ public class ArrayDequeDemo {
 
         // Создать двустороннию очередь в виде массива
         ArrayDeque<String> abq = new ArrayDeque<>();
-
-
+        abq.push("A");
+        abq.push("B");
+        abq.push("D");
+        abq.push("E");
+        abq.push("F");
+        System.out.println("Извлечение из стека: ");
     }
 
 
