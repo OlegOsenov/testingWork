@@ -13,7 +13,11 @@ public class ArrayDequeDemo {
         abq.push("D");
         abq.push("E");
         abq.push("F");
-        System.out.println("Извлечение из стека: ");
+        System.out.print("Извлечение из стека: ");
+        while (abq.peek() != null){
+            System.out.print(abq.pop() + " ");
+        }
+
     }
 
 
