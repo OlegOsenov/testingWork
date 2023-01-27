@@ -7,6 +7,11 @@ public class Address {
     private String state;
     private String code;
 
+    @Override
+    public String toString() {
+        return name + "\n" + street + "\n" + city + "\n" + state + " " + code;
+    }
+
     Address(String n, String s, String c, String st, String cd) {
         name = n;
         street = s;
