@@ -16,6 +16,11 @@ public class CompDemo {
         ts.add("E");
         ts.add("F");
         ts.add("D");
+
+        //Отобразить элементы
+        for (String element : ts)
+            System.out.print(element + " ");
+        System.out.println();
     }
 
 }
