@@ -13,6 +13,7 @@ public class TreeMapDemo2 {
         //Поместить элементы в карту
         tm.put("John Doe", 3434.34);
         tm.put("Tom Sims", 123.22);
+        tm.put("Ralf Sims", 342.67);
         tm.put("Jane Kalistr", 1378.00);
         tm.put("Ivan Vasiliev", 5434.55);
         tm.put("Jon Junior", 123.3);
