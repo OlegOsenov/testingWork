@@ -17,10 +17,15 @@ public class ArraysDemo {
         Arrays.sort(array);
         System.out.print("Содержимое после сортировки: ");
         display(array);
+        //Заполнить массив и отобразить его содержимое
+        Arrays.fill(array, 2, 6, -1);
+        System.out.println("Содержимое после вызова fill(): ");
+        display(array);
 
 
     }
-    static void display(int[] array){
+
+    static void display(int[] array) {
         for (int i : array)
             System.out.print(i + " ");
         System.out.println();
