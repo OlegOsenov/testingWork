@@ -1,9 +1,6 @@
 package AlgorithmsDemo;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.LinkedList;
+import java.util.*;
 
 public class AlgorithmsDemo {
 
@@ -21,6 +18,12 @@ public class AlgorithmsDemo {
 
         //Sort the list using the created comparator
         Collections.sort(ll,r);
+
+        System.out.print("Список отсортирован в обратном порядке ");
+        for (int i: ll){
+            System.out.print(i + " ");
+        }
+        System.out.println();
 
 
     }
