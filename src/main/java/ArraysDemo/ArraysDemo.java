@@ -26,6 +26,10 @@ public class ArraysDemo {
         System.out.print("Содержимое после повторной сортировки: ");
         Arrays.sort(array);
         display(array);
+        // Двоичный поиск значения -9
+        System.out.print("Значение -9 находиться в позиции ");
+        int index = Arrays.binarySearch(array, -9);
+        System.out.println(index);
 
 
     }
