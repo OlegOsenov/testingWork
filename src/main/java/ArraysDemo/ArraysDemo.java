@@ -19,7 +19,12 @@ public class ArraysDemo {
         display(array);
         //Заполнить массив и отобразить его содержимое
         Arrays.fill(array, 2, 6, -1);
-        System.out.println("Содержимое после вызова fill(): ");
+        System.out.print("Содержимое после вызова fill(): ");
+        display(array);
+        // Отсортировать массив и отобразить его содержимое
+        Arrays.sort(array);
+        System.out.print("Содержимое после повторной сортировки: ");
+        Arrays.sort(array);
         display(array);
 
 
