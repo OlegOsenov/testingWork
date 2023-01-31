@@ -17,7 +17,7 @@ public class AlgorithmsDemo {
         Comparator<Integer> r = Collections.reverseOrder();
 
         //Sort the list using the created comparator
-        Collections.sort(ll,r);
+        ll.sort(r);
 
         System.out.print("Список отсортирован в обратном порядке ");
         for (int i: ll){
