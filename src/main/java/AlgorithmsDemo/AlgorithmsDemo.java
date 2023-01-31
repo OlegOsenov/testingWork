@@ -25,6 +25,15 @@ public class AlgorithmsDemo {
         }
         System.out.println();
 
+        //Тасовать список
+        Collections.shuffle(ll);
+        System.out.print("Список перетасован ");
+        for (int i: ll){
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        //
+
 
     }
 
