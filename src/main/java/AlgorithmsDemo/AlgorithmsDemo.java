@@ -32,7 +32,9 @@ public class AlgorithmsDemo {
             System.out.print(i + " ");
         }
         System.out.println();
-        //
+
+        System.out.println("Наименьшее значение: " + Collections.min(ll));
+        System.out.println("Наибольшее значение " + Collections.max(ll));
 
 
     }
