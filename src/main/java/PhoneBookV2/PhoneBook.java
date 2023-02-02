@@ -28,7 +28,7 @@ public class PhoneBook {
         // Проверка имен, если совпадает имя, вывести на экран все телефоны
         for (String x: pb.get("Иванов")){
             num++;
-            System.out.println("Пупкин " + num + " телефон: " + x);
+            System.out.println("Иванов " + num + " телефон: " + x);
         }
 
 
