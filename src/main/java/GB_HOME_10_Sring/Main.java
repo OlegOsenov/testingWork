@@ -23,6 +23,11 @@ public class Main {
 
     private static HashMap<String, Integer> getWordsCount(String[] arr){
         HashMap<String, Integer> map = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
+            String word = arr[i];
+            map.put(word, map.getOrDefault(word, 0) + 1);
+        }
+        return map;
     }
 
     public static void main(String[] args) {
