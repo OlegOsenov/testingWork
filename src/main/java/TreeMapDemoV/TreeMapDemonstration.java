@@ -28,9 +28,13 @@ public class TreeMapDemonstration {
         System.out.println("Получим все объекты, после объекта с ключом 2: " + afterMap);
 
         // Получим все объекты до объекта с ключом 3
-        Map<Integer,String> beforeMap = user.headMap(3);
+        Map<Integer, String> beforeMap = user.headMap(3);
         System.out.println("Получим все объекты до объекта с ключом 3: " + beforeMap);
 
+        // Получим последний элемент дерева
+        Map.Entry<Integer, String> lastItem = user.lastEntry();
+        System.out.printf("Получим последний элемент дерева: key %d values %s\n",
+                lastItem.getKey(), lastItem.getValue());
 
 
     }
