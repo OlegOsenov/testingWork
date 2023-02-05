@@ -27,6 +27,10 @@ public class TreeMapDemonstration {
         Map<Integer, String> afterMap = user.tailMap(2);
         System.out.println("Получим все объекты, после объекта с ключом 2: " + afterMap);
 
+        // Получим все объекты до объекта с ключом 3
+        Map<Integer,String> beforeMap = user.headMap(3);
+        System.out.println("Получим все объекты до объекта с ключом 3: " + beforeMap);
+
 
 
     }
