@@ -1,5 +1,6 @@
 package TreeMapDemoV;
 
+import java.util.Set;
 import java.util.TreeMap;
 
 public class TreeMapDemonstration {
@@ -14,6 +15,10 @@ public class TreeMapDemonstration {
 
         // Получим объект по ключу
         System.out.println("Получим объект по ключу (2): " + user.get(2));
+
+        // Получим вес набор ключей
+        Set<Integer> keys = user.keySet();
+        System.out.println("Получим весь набор ключей: " + keys);
 
 
     }
