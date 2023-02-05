@@ -1,9 +1,6 @@
 package TreeMapDemoV;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Set;
-import java.util.TreeMap;
+import java.util.*;
 
 public class TreeMapDemonstration {
 
@@ -25,6 +22,10 @@ public class TreeMapDemonstration {
         // Получим набор всех значение
         Collection<String> values = user.values();
         System.out.println("Получим набор всех значение: " + values);
+
+        // Получим все объекты, после объекта с ключом 2
+        Map<Integer, String> afterMap = user.tailMap(2);
+        System.out.println("Получим все объекты, после объекта с ключом 2: " + afterMap);
 
 
 
