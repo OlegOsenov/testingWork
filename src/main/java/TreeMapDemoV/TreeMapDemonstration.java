@@ -36,6 +36,17 @@ public class TreeMapDemonstration {
         System.out.printf("Получим последний элемент дерева: key %d values %s\n",
                 lastItem.getKey(), lastItem.getValue());
 
+        Map<String, Person> persons = new TreeMap<>();
+        persons.put("1233", new Person("Alex"));
+        persons.put("3456", new Person("Ivan"));
+        persons.put("76545", new Person("Petr"));
+
+        // Перебор коллекции
+        System.out.println("\nПеребор коллекции");
+        for (Map.Entry<String, Person> item : persons.entrySet()){
+            System.out.printf("Key: %s Value: %s \n", item.getKey(), item.getValue().getName());
+        }
+
 
     }
 
