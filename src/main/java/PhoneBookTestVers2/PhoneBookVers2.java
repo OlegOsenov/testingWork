@@ -10,16 +10,14 @@ public class PhoneBookVers2 {
     private final Map<String, Set<String>> entries = new TreeMap<>();
 
     /**
-     *
      * @param surname принимает на вход фамилию
      * @return возвращает набор номеров которые есть у нас для этой фамилии
      */
-    private Set<String> getPhones(String surname){
-        return entries.getOrDefault(surname, new HashSet<>());
+    private Set<String> getPhones(String surname) {
+        return entries.computeIfAbsent(surname, key -> new HashSet<>());
     }
 
     /**
-     *
      * @param surname фамилия
      * @return возвращает фамилию
      */
@@ -29,20 +27,18 @@ public class PhoneBookVers2 {
 
 
     /**
-     *
      * @return возвращает все фамилии set из ключей
      */
-    public Set<String> getAllSurname(){
+    public Set<String> getAllSurname() {
         return entries.keySet();
     }
 
     /**
-     *
-     * @param surname передают на добавления фамилию
+     * @param surname     передают на добавления фамилию
      * @param phoneNumber передают номер телефона на добавление
      */
 
-    public void add(String surname, String phoneNumber){
+    public void add(String surname, String phoneNumber) {
         Set<String> phones = getPhones(surname);
         phones.add(phoneNumber);
     }
