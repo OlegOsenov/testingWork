@@ -20,6 +20,24 @@ public class PhoneBookVers2 {
 
     /**
      *
+     * @param surname фамилия
+     * @return возвращает фамилию
+     */
+    public Set<String> get(String surname) {
+        return getPhones(surname);
+    }
+
+
+    /**
+     *
+     * @return возвращает все фамилии set из ключей
+     */
+    public Set<String> getAllSurname(){
+        return entries.keySet();
+    }
+
+    /**
+     *
      * @param surname передают на добавления фамилию
      * @param phoneNumber передают номер телефона на добавление
      */
