@@ -9,9 +9,20 @@ public class PhoneBookVers2 {
 
     private final Map<String, Set<String>> entries = new TreeMap<>();
 
+    /**
+     *
+     * @param surname принимает на вход фамилию
+     * @return возвращает набор номеров которые есть у нас для этой фамилии
+     */
     private Set<String> getPhones(String surname){
         return entries.getOrDefault(surname, new HashSet<>());
     }
+
+    /**
+     *
+     * @param surname передают на добавления фамилию
+     * @param phoneNumber передают номер телефона на добавление
+     */
 
     public void add(String surname, String phoneNumber){
         Set<String> phones = getPhones(surname);
