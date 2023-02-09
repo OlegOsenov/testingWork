@@ -5,6 +5,7 @@ public class Sample01 {
     public static void main(String[] args) {
 
         SimpleAccount simpleAccount = new SimpleAccount(111111, 500.1);
+        System.out.println(simpleAccount);
 
 
     }
@@ -22,5 +23,21 @@ class SimpleAccount{
     @Override
     public String toString() {
         return String.format("Сумма средств на счете #%s : %2f руб.", id, amount);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
     }
 }
