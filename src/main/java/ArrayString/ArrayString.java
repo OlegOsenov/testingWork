@@ -1,7 +1,6 @@
 package ArrayString;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /*
  * 1. Создать массив с набором слов (10-20 слов, должны встречаться повторяющиеся):
@@ -21,6 +20,11 @@ public class ArrayString {
             map.put(s, map.getOrDefault(s,0) + 1);
         }
         System.out.println(map);
+        System.out.println("-------------------");
+
+        //task 2 б
+        Set<String> uniq = new HashSet<>(Arrays.asList(words));
+        System.out.println(uniq);
 
 
     }
