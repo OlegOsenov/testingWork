@@ -7,6 +7,8 @@ public class StatsDemoApp {
         Stats<Integer> intStats = new Stats<>(1, 2, 3, 4, 5);
         System.out.println("Ср.значение intStats равно " + intStats.avg());
 
+        Stats<Double> doubleStats = new Stats<>(1.0, 2.0, 3.0, 4.0, 5.0);
+        System.out.println("Ср.значение doubleStats равно " + doubleStats.avg());
 
     }
 
