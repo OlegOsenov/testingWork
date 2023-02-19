@@ -12,7 +12,11 @@ public class TestGeneric<T> {
         this.obj = obj;
     }
 
-    private void showType(){
+    public void setObj(T obj) {
+        this.obj = obj;
+    }
+
+    public void showType(){
         System.out.println("Тип Т: " + obj.getClass().getName());
     }
 }
