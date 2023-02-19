@@ -10,6 +10,12 @@ public class StatsDemoApp {
         Stats<Double> doubleStats = new Stats<>(1.0, 2.0, 3.0, 4.0, 5.0);
         System.out.println("Ср.значение doubleStats равно " + doubleStats.avg());
 
+        if (intStats.sameAvg(doubleStats)){
+            System.out.println("Средние значения равны");
+        } else {
+            System.out.println("Средние значения не равны");
+        }
+
     }
 
 }
