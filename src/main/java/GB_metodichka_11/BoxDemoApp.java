@@ -14,6 +14,14 @@ public class BoxDemoApp {
             System.out.println("Содержимое коробок отличается по типу");
         }
 
+        // Вызвали какой нибудь метод, которому отдали intBox1
+        // и этот метод кладет в коробку String
+
+        intBox1.setObj("Java");
+
+        // продолжаем наш код и при выполнении получим ClassCastException
+        int secondSum = (Integer)intBox1.getObj() + (Integer) intBox2.getObj();
+
 
 
     }
