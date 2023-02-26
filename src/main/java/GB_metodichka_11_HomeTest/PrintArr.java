@@ -33,7 +33,7 @@ public class PrintArr {
     }
 
     // 2. Написать метод, который преобразует массив в ArrayList;
-    public static <T>List<T> convertToArrayAsList(T array[]){
+    public static <T>List<T> convertToArrayAsList(T[] array){
         return Arrays.asList(array);
     }
 
