@@ -34,8 +34,7 @@ public class PrintArr {
 
     // 2. Написать метод, который преобразует массив в ArrayList;
     public static <T>List<T> convertToArrayAsList(T array[]){
-        List<T> list = Arrays.asList(array);
-        return list;
+        return Arrays.asList(array);
     }
 
 }
