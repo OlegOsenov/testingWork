@@ -3,10 +3,13 @@ package GB_metodichka_12;
 public class Classwork {
     public static void main(String[] args) {
 
-        System.out.println("Hello from main!!!, Thread  name is " + Thread.currentThread().getName());
+        System.out.println("Начало работы главного потока ...");
 
-        Thread t1 = new MyThread("MyThread");
-        t1.start();
+        Thread thread = Thread.currentThread();
+        System.out.println(thread.getName());
+        System.out.println(thread.getPriority());
+
+        System.out.println("Завершение главного потока ...");
 
 
     }
