@@ -33,6 +33,7 @@ public class Example_SB_1 {
                 e.printStackTrace();
             }
         }
+        System.out.println("M2");
     }
 
 
