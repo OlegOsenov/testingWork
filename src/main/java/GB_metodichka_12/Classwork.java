@@ -19,6 +19,7 @@ public class Classwork {
         }
         */
 
+        /*
         MyThread[] threads = new MyThread[5];
         for (int i = 0; i < 5; i++) {
             threads[i] = new MyThread("thread #" + (i + 1));
@@ -32,6 +33,8 @@ public class Classwork {
                 throw new RuntimeException(e);
             }
         }
+
+         */
 
         System.out.println("Завершение главного потока ...");
 
@@ -60,4 +63,18 @@ public class Classwork {
     }
 
 
+}
+
+class MyThreadV2 implements Runnable {
+
+    @Override
+    public void run() {
+        System.out.printf("Поток %s запущен \n", Thread.currentThread().getName());
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.printf("Поток %s завершил свою работу \n", Thread.currentThread().getName());
+    }
 }
