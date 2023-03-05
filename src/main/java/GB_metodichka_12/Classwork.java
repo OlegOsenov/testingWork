@@ -4,7 +4,7 @@ public class Classwork {
     public static void main(String[] args) {
 
         System.out.println("Начало работы главного потока ...");
-
+        /*
         Thread thread = Thread.currentThread();
         System.out.println(thread.getName());
         System.out.println(thread.getPriority());
@@ -16,6 +16,21 @@ public class Classwork {
             myThread01.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
+        }
+        */
+
+        MyThread[] threads = new MyThread[5];
+        for (int i = 0; i < 5; i++) {
+            threads[i] = new MyThread("thread #" + (i + 1));
+            threads[i].start();
+        }
+
+        for (MyThread myThread : threads) {
+            try {
+                myThread.join();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
 
         System.out.println("Завершение главного потока ...");
