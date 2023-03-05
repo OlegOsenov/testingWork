@@ -12,6 +12,12 @@ public class Classwork {
         MyThread myThread01 = new MyThread("thread #1");
         myThread01.start();
 
+        try {
+            myThread01.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         System.out.println("Завершение главного потока ...");
 
 
@@ -30,7 +36,7 @@ public class Classwork {
         public void run() {
             System.out.printf("Поток %s запущен \n", Thread.currentThread().getName());
             try {
-                Thread.sleep(1500);
+                Thread.sleep(10000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
