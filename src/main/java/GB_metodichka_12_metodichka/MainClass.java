@@ -2,7 +2,7 @@ package GB_metodichka_12_metodichka;
 
 public class MainClass {
 
-    static class MyRunnableClass implements Runnable {
+    static class MyThread extends Thread {
 
         @Override
         public void run() {
@@ -18,8 +18,7 @@ public class MainClass {
     }
 
     public static void main(String[] args) {
-        new Thread(new MyRunnableClass()).start();
-        new Thread(new MyRunnableClass()).start();
+        new MyThread().start();
     }
 
 }
