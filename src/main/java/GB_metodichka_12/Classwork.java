@@ -33,8 +33,20 @@ public class Classwork {
                 throw new RuntimeException(e);
             }
         }
-
          */
+
+        Thread[] threadV2s = new Thread[5];
+        for (int i = 0; i < 5; i++) {
+            threadV2s[i] = new Thread(new MyThreadV2(),"thread #" + (i + 1));
+            threadV2s[i].start();
+        }
+        for (Thread myThread : threadV2s) {
+            try {
+                myThread.join();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
         System.out.println("Завершение главного потока ...");
 
