@@ -7,6 +7,8 @@ public class ThreadNext {
 //        Запаркуем текущий поток
         System.err.println("Will be Parked");
         LockSupport.park();
+//        Как только нас распаркуют - начнем действовать
+        System.err.println("Unparked");
     };
 
 }
