@@ -25,5 +25,13 @@ public class ThDeedlock {
 
     }
 
+    public static void main(String[] args) {
+
+        final Friend alphonce = new Friend("Alphonce");
+        final Friend gaston = new Friend("Gaston");
+        new Thread(() -> alphonce.bow(gaston)).start();
+        new Thread(() -> gaston.bow(alphonce)).start();
+
+    }
 
 }
