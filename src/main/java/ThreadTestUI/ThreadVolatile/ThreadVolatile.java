@@ -2,7 +2,7 @@ package ThreadTestUI.ThreadVolatile;
 
 public class ThreadVolatile {
 
-    public static boolean flag = false;
+    public static volatile boolean flag = false;
 
     public static void main(String[] args) throws InterruptedException {
         Runnable whileFlagFalse = () -> {
